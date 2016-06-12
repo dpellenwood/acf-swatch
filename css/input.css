@@ -1,6 +1,19 @@
+.acf-field-swatch .acf-input {
+	height: 75px;
+	overflow: auto;
+	border: 1px solid #eee;
+	padding: 0.25em;
+}
+
 ul.acf-swatch-list.acf-hl > li {
 	float: left;
-	margin-right: 2em;
+	width: 50%;
+}
+
+ul.acf-swatch-list.acf-hl > li label {
+	padding-left: 1.6666em;
+	text-indent: -1.6666em;
+	padding-right: 1em;
 }
 
 ul.acf-swatch-list label {
@@ -29,12 +42,11 @@ ul.acf-swatch-list input {
 ul.acf-swatch-list .swatch-toggle {
 	display: inline-block;
 	position: relative;
-	width: 28px !important;
-	height: 28px;
-	bottom: -8px;
-	margin-right: 6px;
+	width: 1.3333em !important;
+	height: 1.3333em;
+	bottom: -0.25em;
+	margin-right: 0.3333em;
 	border: 1px solid #eee;
-	border-radius: 4px;
 	background-size: cover !important;
 	background-image: url('../images/checkers.png');
 	box-sizing: border-box;
@@ -60,8 +72,8 @@ ul.acf-swatch-list .swatch-color {
 	box-sizing: border-box;
 }
 
-ul.acf-swatch-list input[type=radio]:checked ~ .swatch-toggle .swatch-color {
-	border: 3px solid #1e8cbe;
+ul.acf-swatch-list input[type=radio]:checked ~ .swatch-toggle {
+	border-color: #1e8cbe;
 }
 
 ul.acf-swatch-list input[type=radio]:checked:before {
